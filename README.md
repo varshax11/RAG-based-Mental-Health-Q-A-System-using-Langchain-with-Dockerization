@@ -7,12 +7,12 @@ It leverages **LangChain, ChromaDB, and Mistral-7B** to retrieve and generate re
 
 ## Features
 
-**Retrieval-Augmented Generation (RAG)** - Retrieves medical documents for accurate answers.
-**LangChain Integration** - Uses LangChain's retriever, embeddings, and chains for structured querying.
-**Optimized LLM (Mistral-7B)** - Runs efficiently with 4-bit quantization.
-**Conversational Memory** - Keeps track of previous interactions using LangChain Memory.
-**ChromaDB for Vector Storage** - Stores embeddings for fast retrieval.
-**User-Friendly Gradio Interface** - Simple web-based chatbot UI.
+**Retrieval-Augmented Generation (RAG)** - Retrieves medical documents for accurate answers.  
+**LangChain Integration** - Uses LangChain's retriever, embeddings, and chains for structured querying.  
+**Optimized LLM (Mistral-7B)** - Runs efficiently with 4-bit quantization.  
+**Conversational Memory** - Keeps track of previous interactions using LangChain Memory.  
+**ChromaDB for Vector Storage** - Stores embeddings for fast retrieval.  
+**User-Friendly Gradio Interface** - Simple web-based chatbot UI.  
 
 ---
 
