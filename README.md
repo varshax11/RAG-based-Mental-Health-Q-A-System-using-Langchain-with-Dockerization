@@ -5,14 +5,14 @@ It leverages **LangChain, ChromaDB, and Mistral-7B** to retrieve and generate re
 
 ---
 
-## Features  
+## Features
 
-**Conversational AI:** Uses **Mistral-7B** for human-like responses.  
-**RAG (Retrieval-Augmented Generation):** Retrieves relevant medical information from a **vector database**.  
-**Optimized Performance:** Uses **4-bit quantization** to reduce memory usage.  
-**Gradio Interface:** A user-friendly **chat UI** for seamless interaction.  
-**Persistent Storage:** **ChromaDB** stores vector embeddings for efficient retrieval.  
-**Custom Prompting:** Provides **optimized responses** with structured prompts.  
+**Retrieval-Augmented Generation (RAG)** - Retrieves medical documents for accurate answers.
+**LangChain Integration** - Uses LangChain's retriever, embeddings, and chains for structured querying.
+**Optimized LLM (Mistral-7B)** - Runs efficiently with 4-bit quantization.
+**Conversational Memory** - Keeps track of previous interactions using LangChain Memory.
+**ChromaDB for Vector Storage** - Stores embeddings for fast retrieval.
+**User-Friendly Gradio Interface** - Simple web-based chatbot UI.
 
 ---
 
