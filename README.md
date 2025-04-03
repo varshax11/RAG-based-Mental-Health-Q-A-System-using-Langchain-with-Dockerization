@@ -19,7 +19,7 @@ It leverages **LangChain, ChromaDB, and Mistral-7B** to retrieve and generate re
 
 ---
 
-## Installation  
+## Installation
 
 ### **1. Clone the Repository**  
 ```bash
