@@ -1,4 +1,4 @@
-# 🩺 RAG-Based Medical Q&A System using LangChain  
+# 🩺 RAG-Based Medical Q&A System using LangChain
 
 This is a **Retrieval-Augmented Generation (RAG) Q&A System** that provides **human-friendly and accurate responses** to medical questions. 
 It leverages **LangChain, ChromaDB, and Mistral-7B** to retrieve and generate responses in a conversational format.
@@ -37,7 +37,7 @@ venv\Scripts\activate  # On Windows
 pip install -r requirements.txt
 
 ```
-## **Usage**
+## Usage
 
 ## Run the Chatbot
 ```bash
@@ -47,7 +47,7 @@ python rag_qa_system.py
 ```
 Once the server starts, a Gradio interface will open in your browser, where you can ask medical-related questions.
 
-## **Project Structure**
+## Project Structure
 
 ```bash
 
@@ -60,10 +60,10 @@ medical-chatbot-langchain/
 
 ```
 
-## **Contributing**
+## Contributing
 
 Feel free to contribute! Open an issue or submit a pull request if you find any bugs or want to add improvements.
 
-## **License**
+## License
 
 This project is licensed under the MIT License
