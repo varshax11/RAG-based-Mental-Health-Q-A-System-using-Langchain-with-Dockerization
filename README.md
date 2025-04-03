@@ -3,6 +3,9 @@
 This is a **Retrieval-Augmented Generation (RAG) Q&A System** that provides **human-friendly and accurate responses** to medical questions. 
 It leverages **LangChain, ChromaDB, and Mistral-7B** to retrieve and generate responses in a conversational format.
 
+
+![RAG based Q&A System](./images/image.png)
+
 ---
 
 ## Features
