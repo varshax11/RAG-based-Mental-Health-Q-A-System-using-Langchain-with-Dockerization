@@ -1,0 +1,9 @@
+torch
+transformers
+gradio
+langchain
+chromadb
+sentence-transformers
+accelerate
+bitsandbytes
+faiss-cpu
