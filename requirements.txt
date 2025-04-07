@@ -1,6 +1,1 @@
-langchain
-faiss-cpu
-transformers
-sentence-transformers
-onnxruntime==1.19.2
 Flask
