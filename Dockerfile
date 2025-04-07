@@ -1,24 +1,31 @@
+FROM python:3.10-slim
 
-FROM python:3.10-slim-bullseye
+# Prevents Python from writing .pyc files to disk
+ENV PYTHONDONTWRITEBYTECODE=1
+# Prevents Python from buffering stdout and stderr
+ENV PYTHONUNBUFFERED=1
 
-# Install OS-level dependencies
-RUN apt-get update && apt-get install -y \
-    libgl1-mesa-glx \
-    libglib2.0-0 \
-    && rm -rf /var/lib/apt/lists/
+# Install only minimal OS dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libgl1 \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
 
-# Copy all files
+# Copy only requirements first to reduce layer size if code changes
+COPY requirements.txt .
+
+# Upgrade pip and install Python dependencies with cache off to reduce space
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the code
 COPY . .
 
-# Install Python dependencies
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
-
-# Expose port
+# Expose Flask or Streamlit port if needed (adjust as necessary)
 EXPOSE 5000
 
-# Run the Flask app
+# Default command
 CMD ["python", "app.py"]
