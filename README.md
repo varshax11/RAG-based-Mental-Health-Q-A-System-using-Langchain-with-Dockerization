@@ -16,6 +16,8 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline to a
 
 ## Project Structure
 
+```bash
+
 mental_health_rag_project/
 ├── Dockerfile                       # Instructions to build the Docker image
 ├── README.md                        # Project documentation and usage guide
@@ -25,6 +27,10 @@ mental_health_rag_project/
 ├── rag.py                           # Core Retrieval-Augmented Generation (RAG) pipeline
 ├── mental_health_documents/        # Folder containing the document dataset
 │   └── mental_health_documents/    # Subfolder with text documents related to mental health
+
+```
+
+
 
 ---
 
