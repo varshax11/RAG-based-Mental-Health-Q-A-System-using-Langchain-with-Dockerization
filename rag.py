@@ -40,13 +40,13 @@ if not os.path.exists(os.path.join(db_path, "index")):
     print("⚙️ No index found — loading PDFs and creating vector store...")
     docs = load_documents_from_pdfs(pdf_folder)
     if not docs:
-        raise ValueError("❌ No documents found! Check your folder.")
+        raise ValueError("No documents found")
     vector_store.add_documents(docs)
     vector_store.persist()
-    print("✅ Documents loaded and stored!")
+    print("Documents loaded and stored")
 
 else:
-    print("📂 Using existing vector store...")
+    print("Using existing vector store...")
 
 # Retriever and LLM setup
 retriever = vector_store.as_retriever(search_kwargs={"k":2})
@@ -89,7 +89,7 @@ rag_chain = RetrievalQA.from_chain_type(
 
 def get_rag_response(query):
     docs = retriever.get_relevant_documents(query)
-    print("📄 Retrieved Context:")
+    print("Retrieved Context:")
     for d in docs:
         print(d.page_content[:500])  # print first 500 chars
 
